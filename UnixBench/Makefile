@@ -115,6 +115,9 @@ else
     CFLAGS += -Wa,-q
   endif
 
+  # force c910v
+  OPTON = -march=rv64gv0p7_zfh_xtheadc -mabi=lp64d -O3 -ffast-math -funroll-all-loops -finline-limit=500 -fgcse-sm -fno-schedule-insns  -msignedness-cmpiv -fno-code-hoisting -mno-thread-jumps1 -mno-iv-adjust-addr-cost -mno-expand-split-imm
+
 endif
 
 
